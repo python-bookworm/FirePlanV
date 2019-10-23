@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowv</class>
+ <widget class="QMainWindow" name="MainWindowv">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>10</pointsize>
+    <underline>false</underline>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(221, 221, 221);
+color: rgb(13, 13, 13);</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(16, 16, 16);</string>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="text">
+       <string>火种V1.0</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(211, 255, 224);</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>784</width>
+         <height>297</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="2" column="1">
+         <widget class="QTabWidget" name="tabWidget_info_show">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(124, 221, 215);
+font: 12pt &quot;Times New Roman&quot;;</string>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>执行显示</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="4" column="5">
+             <layout class="QGridLayout" name="gridLayout_6" columnstretch="0,0,0,0,0" columnminimumwidth="0,0,0,0,0">
+              <item row="1" column="1">
+               <widget class="QPushButton" name="load_class">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(209, 209, 104);</string>
+                </property>
+                <property name="text">
+                 <string>加载类别</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="3">
+               <widget class="QLineEdit" name="recognit_batch_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QPushButton" name="recognit_pic">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(209, 209, 104);</string>
+                </property>
+                <property name="text">
+                 <string>图片</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="load_model">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(209, 209, 104);</string>
+                </property>
+                <property name="text">
+                 <string>加载模型</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QPushButton" name="recognit_batch">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(209, 209, 104);</string>
+                </property>
+                <property name="text">
+                 <string>批量识别</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLineEdit" name="load_model_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="QLineEdit" name="recognit_pic_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="4">
+               <widget class="QPushButton" name="refresh2">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(209, 209, 104);</string>
+                </property>
+                <property name="text">
+                 <string>刷新</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="4">
+               <widget class="QPushButton" name="recognition">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(209, 209, 104);</string>
+                </property>
+                <property name="text">
+                 <string>识别</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QLineEdit" name="load_class_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="2" column="5" rowspan="2">
+             <widget class="QLabel" name="label_img_show">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QTabWidget" name="tabWidget_oper">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(124, 221, 215);
+font: 12pt &quot;Times New Roman&quot;;</string>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>操作窗口</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="3" column="0">
+             <widget class="QTextEdit" name="te_screen_display">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(200, 200, 200);</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="1" column="0">
+               <widget class="QPushButton" name="load_xml_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(175, 177, 255);</string>
+                </property>
+                <property name="text">
+                 <string>2加载标注文件</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="load_train_pic_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(207, 207, 207);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="load_xml_path_2">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(207, 207, 207);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="pb_data_input_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(175, 177, 255);</string>
+                </property>
+                <property name="text">
+                 <string>3选择类别文件</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="le_data_input_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(207, 207, 207);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QPushButton" name="load_train_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(175, 177, 255);</string>
+                </property>
+                <property name="text">
+                 <string>1加载训练图片</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pb_save_dir_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(175, 177, 255);</string>
+                </property>
+                <property name="text">
+                 <string>4模型保存路径</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="le_save_dir_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(207, 207, 207);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QPushButton" name="pb_refresh">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(175, 177, 255);</string>
+                </property>
+                <property name="text">
+                 <string>刷新</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QPushButton" name="pb_quit">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(175, 177, 255);</string>
+                </property>
+                <property name="text">
+                 <string>退出</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QPushButton" name="pb_run">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(175, 177, 255);</string>
+                </property>
+                <property name="text">
+                 <string>训练</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLabel" name="label_epoch">
+                <property name="text">
+                 <string>Epoch</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QLabel" name="label_batch">
+                <property name="text">
+                 <string>Batch_Size</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QComboBox" name="comboBox">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>10</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>50</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>100</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>500</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1000</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2000</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3000</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4000</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5000</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>10000</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="QComboBox" name="comboBox_2">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>8</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>16</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="4">
+               <widget class="QCheckBox" name="checkBox_gpu">
+                <property name="text">
+                 <string>gpu</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>gen_seq()</slot>
+ </slots>
+</ui>
